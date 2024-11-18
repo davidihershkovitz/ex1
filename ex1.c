@@ -58,7 +58,7 @@ int main() {
   
   // 3, 5, 7, 11
   printf("\n3, 5, 7, 11:\n");
-  long number1, number2, sum;
+  int number1, number2, sum;
   printf("Please enter an octal number of your choice:");
   scanf("%o",&number1);
   printf("Please enter another octal number of your choise:");
