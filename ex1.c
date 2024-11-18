@@ -29,8 +29,8 @@ int main() {
   scanf("%d", &number);
   printf("Please enter a position:\n");
   scanf("%d", &position);
-  printf("Number %d with bit %d set to 1: %d\n", number, position, number |= (1 << position));
-  printf("Number %d with bit %d set to 0: %d\n", number ,position, number &= ~(1 << position));
+  printf("Number %d with bit %d set to 1: %d\n", number, position, number | (1 << position));
+  printf("Number %d with bit %d set to 0: %d\n", number ,position, number & ~(1 << position));
   /*Scan two integers (representing number and a position)
   Make sure the bit in this position is "on" (equal to 1)
   Print the output
@@ -43,7 +43,7 @@ int main() {
   scanf("%d", &number);
   printf("Please enter a position:\n");
   scanf("%d", &position);
-  printf("Number with bit %d toggled: %d\n", position, number ^= (1 << position) );
+  printf("Number with bit %d toggled: %d\n", position, number ^ (1 << position) );
   /*Scan two integers (representing number and a position)
   Toggle the bit in this position
   Print the new number */
