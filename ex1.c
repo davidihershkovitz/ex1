@@ -58,14 +58,14 @@ int main() {
   
   // 3, 5, 7, 11
   printf("\n3, 5, 7, 11:\n");
-  long int number1, number2, sum;
+  int number1, number2, sum;
   printf("Please enter the first number (octal):\n");
-  scanf("%lo", &number1);
+  scanf("%o", &number1);
   printf("Please enter the second number (octal):\n");
-  scanf("%lo", &number2);
+  scanf("%o", &number2);
   sum = number1 + number2;
-  printf("The sum in hexadecimal: %lX\n", sum);
-  printf("The 3,5,7,11 bits are: %ld%ld%ld%ld\n", (sum >> 3) & 1, (sum >> 5) & 1, (sum >> 7) & 1, (sum >> 11) & 1);
+  printf("The sum in hexadecimal: %X\n", sum);
+  printf("The 3,5,7,11 bits are: %d%d%d%d\n", (sum >> 3) & 1, (sum >> 5) & 1, (sum >> 7) & 1, (sum >> 11) & 1);
   /* Scan two integers in octal base
   sum them up and print the result in hexadecimal base
   Print only 4 bits, in positions: 3,5,7,11 in the result. */
