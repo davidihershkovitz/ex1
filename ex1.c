@@ -13,9 +13,9 @@ int main() {
   printf("What bit:\n");
 
   int number, position;
-  printf("Please enter a number:");
+  printf("Please enter a number:\n");
   scanf("%d",&number);
-  printf("Please enter a position:");
+  printf("Please enter a position:\n");
   scanf("%d",&position);
   int bit = (number >> position) & 1;
   printf("The bit in position %d of number %d is: %d\n", position, number, bit);
@@ -23,25 +23,25 @@ int main() {
   
   // Set bit
   printf("\nSet bit:\n");
-  printf("Please enter a number:");
+  printf("Please enter a number:\n");
   scanf("%d",&number);
-  printf("Please enter a position:");
+  printf("Please enter a position:\n");
   scanf("%d",&position);
   printf("Number %d with bit %d set to 1 is:%d\n", number, position, number | (1 << position));
   printf("Number %d with bit %d set to 0 is:%d\n", number ,position, number & ~(1 << position));
 
   // Toggle bit
   printf("\nToggle bit:\n");
-  printf("Please enter a number:");
+  printf("Please enter a number:\n");
   scanf("%d",&number);
-  printf("Please enter a position:");
+  printf("Please enter a position:\n");
   scanf("%d",&position);
   printf("Number %d with bit %d toggled is:%d\n", number, position, number ^ (1 << position) );
 
   
   // Even - Odd
   printf("\nEven - Odd:\n");
-  printf("Please enter a number:");
+  printf("Please enter a number:\n");
   scanf("%d",&number);
   printf("%d\n", (number & 1) ^ 1);
 
@@ -49,9 +49,9 @@ int main() {
   // 3, 5, 7, 11
   printf("\n3, 5, 7, 11:\n");
   int number1, number2, sum;
-  printf("Please enter the first number (octal):");
+  printf("Please enter the first number (octal):\n");
   scanf("%o",&number1);
-  printf("Please enter the second number (octal):");
+  printf("Please enter the second number (octal):\n");
   scanf("%o",&number2);
   sum = number1 + number2;
   printf("The sum in hexadecimal:%x\n", sum);
@@ -60,4 +60,4 @@ int main() {
   printf("Bye!\n");
   
   return 0;
-}
+}/**/
