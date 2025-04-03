@@ -25,8 +25,8 @@ int main() {
   scanf("%d",&number);
   printf("Please enter a position:\n");
   scanf("%d",&position);
-  printf("Number with bit %d set to 1 is: %d\n", position, number | (1 << position));
-  printf("Number with bit %d set to 0 is: %d\n", position, number & ~(1 << position));
+  printf("Number with bit %d set to 1: %d\n", position, number | (1 << position));
+  printf("Number with bit %d set to 0: %d\n", position, number & ~(1 << position));
 
   // Toggle bit
   printf("\nToggle bit:\n");
@@ -34,7 +34,7 @@ int main() {
   scanf("%d",&number);
   printf("Please enter a position:\n");
   scanf("%d",&position);
-  printf("Number with bit %d toggled is: %d\n", position, number ^ (1 << position) );
+  printf("Number with bit %d toggled: %d\n", position, number ^ (1 << position) );
 
   
   // Even - Odd
